@@ -1,0 +1,26 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text {
+    display: inline-block;
+    padding-bottom: 0.25rem;
+    position: relative;
+}
+
+.text::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: blue;
+    transition: width 0.25s ease-out;
+}
+
+.text:hover::before {
+    width: 100%;
+}
