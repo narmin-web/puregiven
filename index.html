@@ -5,13 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;700&display=swap" rel="stylesheet">
-    <title>PureGiven</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <title>Law Society of Azerbaijan</title>
 </head>
 
 <body>
@@ -22,7 +26,7 @@
                     <div class="header__section">
                         <div class="logo">
                             <a href="index.html">
-                                <img src="img/light_logo_2x.png" alt="logo" class="header__pic">
+                                <img src="img/241510021_564802601388411_4352071921054109543_n.png" alt="logo" class="header__pic">
                             </a>
                         </div>
                         <nav class="nav">
@@ -522,7 +526,7 @@
                 </div>
                 <div class="row">
                     <div class="col-12 gllry__col-12">
-                        <div class="gllry__part">
+                        <div class="gllry__part active">
                             <div class="action">
                                 <img src="img/gallery_img_1.png" alt="girl" class="glry__pic">
                                 <div class="gllry__content">
@@ -558,6 +562,8 @@
                                 </div>
                             </div>
                         </div>
+                        <button class="btn" onclick="prev()">Prev</button>
+                        <button class="btn" onclick="next()">Next</button>
                     </div>
                 </div>
             </div>
@@ -826,11 +832,32 @@
                 </div>
             </div>
         </div>
-
         </div>
         </div>
+        <a href="#" class="to-top">
+            <i class="fas fa-angle-up"></i>
+        </a>
         <script src="app.js"></script>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.5/lib/darkmode-js.min.js"></script>
+    <script>
+        var options = {
+            bottom: '32px', // default: '32px'
+            right: '32px', // default: '32px'
+            left: 'unset', // default: 'unset'
+            time: '0.5s', // default: '0.3s'
+            mixColor: '#fff', // default: '#fff'
+            backgroundColor: '#fff', // default: '#fff'
+            buttonColorDark: '#100f2c', // default: '#100f2c'
+            buttonColorLight: '#fff', // default: '#fff'
+            saveInCookies: false, // default: true,
+            label: '&#x1f313;', // default: ''
+            autoMatchOsTheme: true // default: true
+        }
+
+        const darkmode = new Darkmode(options);
+        darkmode.showWidget();
+    </script>
 </body>
 
 </html>
