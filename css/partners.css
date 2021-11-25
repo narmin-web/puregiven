@@ -182,92 +182,85 @@ p {
 }
 
 
-/* Event styles */
+/* Members styles */
 
-.event__row {
-    margin-top: 40px;
-    margin-bottom: 50px;
+.members__col-4 {
+    padding: 50px 0px;
+    margin: 50px 0px;
 }
 
-.event__part {
-    background-color: #F8F8F8;
+.members__content {
+    font-size: 30px;
+    color: #9c0505;
 }
 
-.description {
-    padding: 40px 50px 0px;
-}
-
-.day {
-    font-size: 14px;
+.members__text {
+    font-size: 44px;
     color: #363a57;
-    background-color: #f0eeec;
-    padding: 4px 10px;
-    font-weight: 600;
-    line-height: 22px;
-    display: inline-block;
-    margin-bottom: 23px;
-}
-
-.event__title {
-    font-size: 23px;
-    font-weight: bold;
-    color: #363a57;
-}
-
-.event__photo {
-    max-width: 100%;
-}
-
-.organizator__text {
-    font-size: 10px;
-    color: #7c7a71;
-    font-weight: 600;
     line-height: 1;
-    text-transform: uppercase;
-    display: block;
-    margin: 0px 50px;
+    padding: 5px 0px 13px;
 }
 
-.author__info {
-    margin: 0px 50px
+.members__metn {
+    font-size: 15px;
+    color: #636886;
+    font-family: "Barlow", sans-serif;
+    padding: 0px 0px 30px;
 }
 
-.author__name {
-    font-size: 14px;
-    color: #363a57;
-    font-weight: 700;
-    display: block;
-    margin: 0px 50px;
+.prev,
+.next {
+    background-color: transparent;
+    width: 57px;
+    height: 56px;
+    color: #fff;
+    line-height: 57px;
+    text-align: center;
+    border: 1px solid #e9e6e3;
+    color: #e9e6e3;
+    display: inline-block;
+    cursor: pointer;
 }
 
-.author__img {
-    margin: -40px 0px;
+.prev:hover {
+    background-color: #011c45;
 }
 
-.btn__lists {
+.next:hover {
+    background-color: #011c45;
+}
+
+.slides {
+    border: 1px solid #ededed;
+    border-top: 0px solid transparent;
+}
+
+.members__col-7 {
     display: flex;
-    padding: 0px 47px;
+    padding: 50px 0px;
+    margin: 50px 0px;
 }
 
-.share {
-    padding: 11px;
-    margin: 46px 20px;
-    border: 2px solid #bebcba;
+.vl__img {
+    width: 263px;
+    filter: grayscale(100%);
 }
 
-.btn2 {
-    padding: 19px 7px;
-    font-size: 16px;
-    color: #7b7f85;
-    font-weight: 700;
-    border: 2px solid #bebcba;
-    margin: 45px 0px;
-    background-color: white;
+.surname {
+    font-size: 20px;
+    color: #363a57;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-bottom: 0;
+    padding: 30px 11px 12px;
 }
 
-.btn2:hover {
-    background-color: #9c0505;
-    border: 2px solid #9c0505;
+.company {
+    font-size: 14px;
+    font-family: "Barlow", sans-serif;
+    color: #636886;
+    padding: 0px 12px 50px;
 }
 
 

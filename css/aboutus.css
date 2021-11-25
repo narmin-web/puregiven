@@ -61,7 +61,7 @@ p {
 }
 
 .nav {
-    padding: 37px;
+    padding: 34px;
 }
 
 .nav__menu {
@@ -132,15 +132,14 @@ p {
     font-size: 12px;
     border-radius: 40px;
     background: #9c0505;
-    margin: 29px 15px;
 }
 
 
 /* BANNER styles */
 
 .banner {
-    background-image: url(../img/law-colleges-banner.jpeg);
-    background-image: linear-gradient(to right, rgba(0, 32, 76, 0.80), rgba(255, 0, 0, 0)), url(../img/law-colleges-banner.jpeg);
+    background-image: url(../img/banner2.jpeg);
+    background-image: linear-gradient(to right, rgba(0, 32, 76, 0.80), rgba(255, 0, 0, 0)), url(../img/banner2.jpeg);
     background-repeat: no-repeat;
     max-width: 100%;
     background-size: cover;
@@ -162,7 +161,7 @@ p {
 }
 
 .banner__list1 {
-    color: #363a57;
+    color: #636886;
     background-color: white;
     padding: 35px;
     font-size: 16px;
@@ -182,92 +181,136 @@ p {
 }
 
 
-/* Event styles */
+/* Impact styles */
 
-.event__row {
-    margin-top: 40px;
-    margin-bottom: 50px;
-}
-
-.event__part {
-    background-color: #F8F8F8;
-}
-
-.description {
-    padding: 40px 50px 0px;
-}
-
-.day {
-    font-size: 14px;
-    color: #363a57;
+.impact {
     background-color: #f0eeec;
-    padding: 4px 10px;
-    font-weight: 600;
-    line-height: 22px;
-    display: inline-block;
-    margin-bottom: 23px;
+    background-image: url(../img/impact_bd.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 760px;
 }
 
-.event__title {
-    font-size: 23px;
-    font-weight: bold;
+.impact__col-6 {
+    padding: 50px 0px;
+    margin: 50px 0px;
+}
+
+.impact__content {
+    font-size: 30px;
+    color: #9c0505;
+}
+
+.impact__text {
+    font-size: 44px;
     color: #363a57;
-}
-
-.event__photo {
-    max-width: 100%;
-}
-
-.organizator__text {
-    font-size: 10px;
-    color: #7c7a71;
-    font-weight: 600;
     line-height: 1;
-    text-transform: uppercase;
-    display: block;
-    margin: 0px 50px;
+    padding: 20px 0px;
 }
 
-.author__info {
-    margin: 0px 50px
+.metn {
+    line-height: 30px;
+    font-size: 18px;
+    color: #636886;
+    font-family: "Barlow", sans-serif;
+    padding: 20px 0px;
 }
 
-.author__name {
-    font-size: 14px;
-    color: #363a57;
-    font-weight: 700;
-    display: block;
-    margin: 0px 50px;
-}
-
-.author__img {
-    margin: -40px 0px;
-}
-
-.btn__lists {
-    display: flex;
-    padding: 0px 47px;
-}
-
-.share {
-    padding: 11px;
-    margin: 46px 20px;
-    border: 2px solid #bebcba;
-}
-
-.btn2 {
-    padding: 19px 7px;
+.impact__btn {
+    font-size: 13px;
+    padding: 20px 25px;
     font-size: 16px;
-    color: #7b7f85;
-    font-weight: 700;
-    border: 2px solid #bebcba;
-    margin: 45px 0px;
-    background-color: white;
-}
-
-.btn2:hover {
     background-color: #9c0505;
     border: 2px solid #9c0505;
+    color: #fff;
+}
+
+.impact__btn:hover {
+    background-color: #011c45;
+    border: 2px solid #011c45;
+}
+
+.phone {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #bebcba;
+    color: #011c45;
+    padding: 21px 21px;
+}
+
+.impact__btn,
+.phone {
+    margin-right: 10px;
+}
+
+.impact__blocks {
+    padding: 58px;
+    background: white;
+    position: absolute;
+    top: 13%;
+}
+
+.impact__sec {
+    border: 1px solid #e8ebef;
+    flex: 50% 0 0;
+    padding: 43px 66px;
+    text-align: center;
+}
+
+.impact__sec:hover {
+    background-color: #e07a5e;
+    color: white;
+}
+
+.impact__count {
+    font-size: 36px;
+    font-weight: 700;
+    color: #363a57;
+    margin-bottom: 12px;
+    line-height: 1;
+}
+
+.impact__name {
+    font-size: 12px;
+    color: #4c5a74;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.number {
+    color: #011c45;
+}
+
+
+/* Adress style */
+
+.adress {
+    background-color: #f0eeec;
+    padding: 120px 0px;
+}
+
+.adress__part p {
+    font-size: 18px;
+    color: #636886;
+    padding: 12px 10px;
+}
+
+.adress__section {
+    display: flex;
+}
+
+.adress__pic {
+    padding: 20px 30px;
+}
+
+.number {
+    font-size: 24px;
+    font-family: "Rajdhani", sans-serif;
+    color: #363a57;
+    font-weight: bold;
+    line-height: 1.2;
 }
 
 

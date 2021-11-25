@@ -38,41 +38,21 @@ p {
 }
 
 
-/*
-h3 {
-    font-size: 32px;
-}
-
-ul li {
-    list-style-type: none;
-}
-
-
 /* Header styles */
 
 .header__section {
-    justify-content: space-around;
-    width: 100%;
-    height: 90px;
     display: flex;
     align-items: center;
-    z-index: 100;
-    border-bottom: 2px solid grey;
     position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    z-index: 9;
 }
 
 .logo {
-    border-right: 2px solid grey;
-    padding: 32px 24px 25px 0px;
+    padding: 15px;
 }
 
 .header__pic {
-    width: 154px;
-    height: 24px;
+    height: 75px;
+    width: 174px;
 }
 
 .header__part {
@@ -80,35 +60,43 @@ ul li {
     align-items: center;
 }
 
-.header__cart {
-    padding: 0px 20px;
+.nav {
+    padding: 34px;
+}
+
+.nav__menu {
     position: relative;
 }
 
-.cart__number {
-    background-color: #cd744e;
-    color: #fff;
-    border-radius: 50%;
-    font-size: 10px;
-    text-align: center;
+.dropdown {
     position: absolute;
-    top: -5%;
-    right: 23%;
-    height: 15px;
-    width: 15px;
+    top: 73px;
+    list-style: none;
+    background-color: white;
+    display: block;
+    border-bottom: 4px solid #9c0505;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.6s ease 0s;
 }
 
-.search__icon {
-    border-right: 2px solid grey;
-    padding: 30px 32px 30px 8px;
-    color: #fff;
-    font-size: 18px;
-    cursor: pointer;
+.dropdown li {
+    padding: 7px 25px;
+    font-size: 16px;
+    color: #777;
+    letter-spacing: 1;
+    font-weight: 500;
+    display: inline-block
 }
 
-.nav {
-    padding: 0px 0px 0px 50px;
-    margin-left: 50px;
+.nav__menu:hover .dropdown {
+    opacity: 1;
+    visibility: visible;
+}
+
+.dropdown li:hover {
+    color: #9c0505;
+    transition: all 0.6s ease 0s;
 }
 
 .nav__menu {
@@ -119,7 +107,7 @@ ul li {
 }
 
 .nav__menu:hover {
-    color: #f2cc8e;
+    color: #9c0505;
 }
 
 .nav__menu::before {
@@ -129,7 +117,7 @@ ul li {
     bottom: -25px;
     width: 0;
     height: 3px;
-    background-color: #f2cc8e;
+    background-color: #9c0505;
     transition: width 0.6s ease-out;
 }
 
@@ -138,15 +126,21 @@ ul li {
 }
 
 .header__btn {
-    font-size: 18px;
-    margin: 0px 44px 0px -21px;
+    color: white;
+    display: inline-block;
+    padding: 11px 20px;
+    font-size: 12px;
+    border-radius: 40px;
+    background: #9c0505;
+    margin: 29px 15px;
 }
 
 
-/* Contact styles */
+/* S styles */
 
 .contact {
-    background-image: url(../img/breadcrumb_img.jpeg);
+    background-image: url(../img/1.jpeg);
+    background-image: linear-gradient(to right, rgba(0, 32, 76, 0.80), rgba(255, 0, 0, 0)), url(../img/1.jpeg);
     background-repeat: no-repeat;
     max-width: 100%;
     background-size: cover;
@@ -157,20 +151,10 @@ ul li {
     margin: 50px 0px;
 }
 
-.contact__title {
-    font-size: 18px;
-    color: #f2cc8e;
-    font-weight: bold;
-    text-transform: uppercase;
-    padding: 50px 0px 0px;
-    margin: 50px 0px 0px;
-}
-
 .contact__text {
-    font-size: 120px;
+    font-size: 77px;
     color: #faf7e3;
     font-weight: bold;
-    text-transform: uppercase;
 }
 
 .contact__section {
@@ -186,7 +170,7 @@ ul li {
 
 .causes {
     font-size: 16px;
-    color: #d14f42;
+    color: #9c0505;
     background-color: white;
     padding: 20px 13px;
 }
@@ -238,8 +222,8 @@ ul li {
 }
 
 .cause__tag:hover {
-    background-color: #e07a5e;
-    border-color: #e07a5e;
+    background-color: #9c0505;
+    border-color: #9c0505;
 }
 
 .camera,
@@ -279,8 +263,8 @@ ul li {
 
 .btn__share:hover {
     border-width: 2px;
-    border-color: #e07a5e;
-    background-color: #e07a5e;
+    border-color: #9c0505;
+    background-color: #9c0505;
     color: white;
 }
 
@@ -296,8 +280,8 @@ ul li {
 
 .button2:hover {
     border-width: 2px;
-    border-color: #e07a5e;
-    background-color: #e07a5e;
+    border-color: #9c0505;
+    background-color: #9c0505;
     color: white;
 }
 
@@ -310,7 +294,7 @@ ul li {
     height: 15px;
     width: 90%;
     background-image: url(../img/progress_bar_bg.png);
-    background-color: #02c2a9;
+    background-color: #011c45;
     box-shadow: 0px 3px 15px 0px rgb(2 194 169 / 50%);
 }
 
@@ -346,16 +330,19 @@ ul li {
 }
 
 .more__text {
-    color: #d14f42;
+    color: #9c0505;
     font-size: 18px;
-    border-bottom: 1px solid #d14f42;
+    border-bottom: 1px solid #9c0505;
 }
 
 
 /* Volunteer styles */
 
 .volunteer {
-    background-image: url(../img/breadcrumb_bg.png);
+    background-image: url(../img/inner_hero_red.jpeg);
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .volunteer__content {
@@ -380,8 +367,8 @@ ul li {
 }
 
 .btn:hover {
-    background-color: #82b29a;
-    border: 2px solid #82b29a;
+    background-color: #011c45;
+    border: 2px solid #011c45;
 }
 
 
@@ -404,7 +391,6 @@ ul li {
 
 .footer__pic {
     max-width: 150px;
-    margin: 25px 0px;
 }
 
 .readmore {
@@ -412,13 +398,13 @@ ul li {
 }
 
 .footer__content i {
-    color: #e07a5e;
+    color: #9c0505;
     margin-left: 6px;
     font-size: 12px;
 }
 
 .footer__widget {
-    margin: 5px 33px;
+    margin: 5px 20px;
 }
 
 .footer__widget1 {
@@ -438,11 +424,11 @@ input[type=text] {
 }
 
 input[type=submit] {
-    border-color: #82b29a;
-    background-color: #82b29a;
+    border-color: #9c0505;
+    background-color: #9c0505;
     width: 50px;
     margin-left: -6px;
-    height: 50px;
+    height: 52px;
 }
 
 .footer__par {
