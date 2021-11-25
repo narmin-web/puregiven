@@ -1,3 +1,1 @@
-# puregiven
-# lawsociety
 # lawsociety
